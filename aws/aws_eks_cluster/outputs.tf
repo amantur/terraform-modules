@@ -9,3 +9,7 @@ output "id" {
 output "endpoint" {
   value = aws_eks_cluster.default.endpoint
 }
+
+output "name" {
+  value = aws_eks_cluster.default.name
+}
