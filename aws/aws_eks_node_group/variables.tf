@@ -24,7 +24,7 @@ variable "node_role_arn" {
 }
 
 variable "subnet_ids" {
-  type        = list(string)
+  type        = list(any)
   description = "Identifiers of EC2 Subnets to associate with the EKS Node Group. These subnets must have the following resource tag: kubernetes.io/cluster/CLUSTER_NAME (where CLUSTER_NAME is replaced with the name of the EKS Cluster)."
 }
 
