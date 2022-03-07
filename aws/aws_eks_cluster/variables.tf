@@ -13,7 +13,6 @@ variable "cluster_role_arn" {
   description = "Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group."
 }
 
-
 variable "subnet_ids" {
   type        = list(any)
   description = "List of subnet IDs. Must be in at least two different availability zones."
