@@ -13,10 +13,10 @@ variable "vm_size" {
   description = "Size of the VM as specifed by Virtual Machine specs."
 }
 
-variable "enable_autoscaling"{
-  type=bool
+variable "enable_autoscaling" {
+  type        = bool
   description = "Enables autoscaling between the values of [min_node_count] and [max_node_count] values."
-  default = true
+  default     = true
 }
 
 variable "min_node_count" {
@@ -42,7 +42,7 @@ variable "max_node_count" {
 variable "max_pod_count" {
   type        = number
   description = "The maximum number of pods to run on an agent."
-  default = 50
+  default     = 50
 }
 
 variable "kubernetes_subnet_id" {

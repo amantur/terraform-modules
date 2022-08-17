@@ -18,7 +18,7 @@ variable "lambda_role_arn" {
 variable "lambda_runtime" {
   type        = string
   description = "Lambda Runtime"
-  default = "go1.x"
+  default     = "go1.x"
 }
 
 variable "lambda_handler" {
